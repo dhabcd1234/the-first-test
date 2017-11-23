@@ -1,0 +1,96 @@
+1.install angularjs + nodejs
+
+npm install -g express-generator  
+npm install -g express
+
+http://blog.csdn.net/foruok/article/details/47652389
+
+
+2.ipython notebook
+jupyter notebook
+
+3.ipython
+自动补全功能，使用tab键，如输入im后按tab键，可自动补全import。
+进入IPython，CMD中输入ipython
+退出IPython，CMD中输入quit() 
+
+
+使用魔法指令% 
+%run test.py 直接运行python脚本
+%pwd: 显示当前工作目录。
+%cd: 切换工作目录。
+%bookmark: 工作目录书签
+
+使用快捷键 
+ctrl+u 删除整行（光标在最后）
+ctrl+k 删除整行（光标在最前）
+ctrl+l 清空屏幕
+ctrl+c 中止运行程序
+ctrl+e 跳转到最后
+ctrl+a 跳转到第一行（与Windows热键冲突，是全选）
+ctrl+r 反向搜索历史
+
+
+4.ipython need lib
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pandas
+numpy, dateutil, pytz, setuptools pandas
+
+pip install C:\tool\nummy\numpy-1.13.3+mkl-cp36-cp36m-win32.whl
+pip install C:\tool\nummy\python_dateutil-2.6.1-py2.py3-none-any.whl
+pip install C:\tool\nummy\pytz-2017.3-py2.py3-none-any.whl
+pip install C:\tool\nummy\setuptools-36.7.2-py2.py3-none-any.whl
+pip install C:\tool\nummy\pandas-0.21.0-cp36-cp36m-win32.whl
+pip install pandas-datareader
+pip install C:\tool\nummy\matplotlib-2.1.0-cp36-cp36m-win32.whl
+
+
+import pandas_datareader.data as web
+
+
+
+Matplotlib 
+1. Figure -> Axes -> (Line2D, Text, etc.)
+
+
+
+
+
+pyvenv:
+1.
+先切换到你需要放置项目的目录，然后在命令行中使用pyvenv新建虚拟环境:
+python -m venv venv
+
+2.
+激活虚拟环境,需要先切换到 test/Scripts/目录下，执行activate.bat这个批处理，这个就和linux有所区别:
+cd venv/Scripts
+activate
+
+(venv) $ pip install flask
+
+3.
+激活虚拟环境后可以安装各种库，执行各种操作了，怎么退出虚拟环境呢？
+deactivate
+
+4.
+从A环境迁移到B虚拟环境怎么重建依赖
+先在A环境中把所有依赖都保存到re.txt中,使用pip freeze:
+pip freeze > re.txt
+
+
+$ git fetch --all
+$ git fetch --tags
+$ git reset --hard origin/master
+
+MySQL mysql://username:password@hostname/database
+Postgres postgresql://username:password@hostname/database
+SQLite（Unix） sqlite:////absolute/path/to/database
+SQLite（Windows） sqlite:///c:/absolute/path/to/database
+
+
+5
+Mac OS X 中使用bash，那么可以按照下面的方式设定这两个变量：
+(venv) $ export MAIL_USERNAME=<Gmail username>
+(venv) $ export MAIL_PASSWORD=<Gmail password>
+微软Windows 用户可按照下面的方式设定环境变量：
+(venv) $ set MAIL_USERNAME=<Gmail username>
+(venv) $ set MAIL_PASSWORD=<Gmail password>
